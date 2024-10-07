@@ -1,0 +1,6 @@
+﻿PassengerId;Survived;Pclass;Name;Sex;Age;SibSp;Parch;Ticket;Fare;Cabin;Embarked
+12;1;1;Bonnell, Miss. Elizabeth;female;58.0;0;0;113783;26.55;C103;S
+16;1;2;Hewlett, Mrs. (Mary D Kingcome) ;female;55.0;0;0;248706;16.0;;S
+196;1;1;Lurette, Miss. Elise;female;58.0;0;0;PC 17569;146.5208;B80;C
+269;1;1;Graham, Mrs. William Thompson (Edith Junkins);female;58.0;0;1;PC 17582;153.4625;C125;S
+276;1;1;Andrews, Miss. Kornelia Theodosia;female;63.0;1;0;13502;77.9583;D7;S
