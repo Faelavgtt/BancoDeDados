@@ -1,11 +1,17 @@
 import pandas as pd
 
-df = pd.read_csv("https://raw.githubusercontent.com/Faelavgtt/SenacMS/refs/heads/main/CienciaDeDados(Bonus)/atividades/Out%2008/KaggleDataset/dataset/sports_car.csv", header=1)
+df = pd.read_csv("https://raw.githubusercontent.com/Faelavgtt/SenacMS/refs/heads/main/CienciaDeDados(Bonus)/atividades/Out%2008/KaggleDataset/dataset/Sport%20car%20price.csv")
 
 # print(df.columns)
 # print(df.head()) 
+# print(df.dtypes)
 
 
-print(df.query('"Country of Origin" == "Italy"').head())
+# cavalo=(df.query('Horsepower > "1000"').head())
 
-#df.to_csv('Country.csv',sep=';',index=False,encoding='utf-8-sig')
+# cavalo.to_csv('cavalos.csv',sep=';',index=False,encoding='utf-8-sig')
+
+# ano=(df.query('Year > 2000').head())
+
+# ano.to_csv('ano.csv',sep=';',index=False,encoding='utf-8-sig')
+
