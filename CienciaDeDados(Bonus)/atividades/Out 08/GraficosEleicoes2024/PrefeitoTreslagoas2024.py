@@ -19,3 +19,11 @@ plt.grid(True)
 
 plt.axis('equal')
 plt.show()
+
+plt.bar(candidatospref, votos, color='skyblue')
+plt.xlabel('Candidatos')
+plt.ylabel('Votos')
+plt.title('Votos por Candidato')
+plt.xticks(rotation=45, ha='right')
+
+plt.show()
