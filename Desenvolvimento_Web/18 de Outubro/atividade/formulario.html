@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Cadastro de Usuário</h1>
+        <form action="/page.php">
+            <fieldset>
+                <legend>Nome Completo</legend>
+                <label for="name"></label><br>
+                <input type="text" id="name" name="name" placeholder="Nome"  size="20" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Nome do meio"  size="20" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Ultimo nome"  size="20" required><br><br>
+                <input type="text" id="name" name="name" placeholder="apelido"  size="20" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Nome Social"  size="20" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Qual sua linguagem preferida:</legend>
+                <label for="fav_language"></label><br>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br> <br>
+            </fieldset>
+            <fieldset id="email">
+                <legend>E-mail</legend>
+                <input type="email" name="email" id="email" size="20" maxlength="30">
+            </fieldset>
+            <fieldset>
+                <legend>Senha:</legend>
+                <input type="password" name="Senha" id="campos" size="20" maxlength="10" >
+            </fieldset>
+            <fieldset>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            </fieldset>
+            <fieldset>
+                <label for="data">Data de Nascimento:</label><br>
+                <input type="date" name="date" id="data" size="20" maxlength="10" placeholder="00-00-0000"></p>
+            </fieldset>
+            <fieldset>
+                <label for="cor">Cor Favorita:</label><br>
+                <input type="color" id="cor" name="cor"><br>
+            </fieldset>
+            <fieldset>
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" name="idade" min="0" max="120"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Gênero:</legend>
+                <label for="genero"></label>
+                <input type="radio" id="generom" name="genero" value="Masculino">
+                <label for="generom">Masculino</label><br>
+                <input type="radio" id="generof" name="genero" value="Feminino">
+                <label for="generof">Feminino</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha seus times favoritos:</legend>
+                <input type="checkbox" id="flamengo" name="Flamengo" value="Flamengo">
+                <label for="flamengo">Flamengo</label><br>
+
+                <input type="checkbox" id="palmeiras" name="Palmeiras" value="Palmeiras">
+                <label for="palmeiras">Palmeiras</label><br>
+
+                <input type="checkbox" id="corithians" name="Corithians" value="Corithians">
+                <label for="corithians">Corithians</label><br>
+            </fieldset>
+            <fieldset>
+                <label for="pais">País de Origem:</label><br>
+                <select id="pais" name="pais">
+                <option value="brasil">Brasil</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="japao">Japão</option>
+                </select><br><br>
+            </fieldset>
+            <fieldset>
+                <label for="arquivo">Envie sua foto de perfil:</label><br>
+                <input type="file" id="arquivo" name="arquivo"><br><br>
+            </fieldset>
+            <fieldset>
+                <label for="pesquisa">Pesquisar algo:</label><br>
+                <input type="search" id="pesquisa" name="pesquisa" placeholder="Buscar..."><br>
+    
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar Formulário</button>
+
+        </form>
+    </body>
+</html>
