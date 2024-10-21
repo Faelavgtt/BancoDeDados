@@ -6,7 +6,18 @@
     <body>
 
         <form action = "/page.php">
-        
+            <audio autoplay controls muted loop>
+                <source src="audio.ogg" type="audio/ogg">
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+            <!--
+                <video width="320" height="240" autoplay muted>
+                <source src="videoplayback.mp4" type="video/mp4">
+                <source src="videoplayback.mp4" type="video/ogg">
+            </video>
+
+            -->
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/GZjt_sA2eso" title="BTS (방탄소년단) &#39;Save ME&#39; Official MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
             <!-- Text -->
             <fieldset><legend>Dados Pessoais</legend>
                 <label for="fname">Primeiro nome</label><br>
@@ -94,7 +105,10 @@
             <!-- textarea -->
             <label for="story">Tell us your story</label>
             <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...</textarea>
-
+            &#x1F536;
+            <picture>
+                <source media="(max-width:320px)" srcset=""> 
+            </picture>
 
 
             
