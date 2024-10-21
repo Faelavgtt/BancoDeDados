@@ -13,3 +13,43 @@ body{
 .fonte{
     font-family: 'Courier New', Courier, monospace;
 }
+
+.teste{
+    text-align: center;
+    font-weight: bold;
+    font-size: large; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 24px;/* espaçamento */
+
+}
+
+#paragrafo{
+    color: deeppink;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+
+.cores{
+    color: aquamarine;
+    background-color: #ededed;
+    background: linear-gradient(to bottom,#2343cf,#24b54e);
+    background-attachment: fixed;
+    /*background: url()*/
+}
+
+.bordas{
+    border-color: cadetblue;
+    border-radius: 30px;
+    border: 4px;
+    border-style: groove;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 8px #8888;
+}
+.boxs{
+    box-sizing: border-box ;/*define altura e largura baseada em toda a caixa incluindo borda e padding*/
+    box-sizing: content-box;/*define altura e largura baseada no conteudo*/
+
+}
