@@ -28,19 +28,153 @@
             </fieldset>
             <!--Fieldset Endereço-->
             <fieldset>
+                <legend>Endereço</legend>
                 <label for="tipo_endereco">Tipo de Endereço:</label><br>
-                <input type="radio" id="avenida" name="AV" value="AV">
+                <input type="radio" id="avenida" name="tipo_endereco" value="Avenida">
                 <label for="avenida">Avenida</label><br>
 
-                <input type="radio" id="rua" name="Rua" value="Rua">
+                <input type="radio" id="rua" name="tipo_endereco" value="Rua">
                 <label for="rua">Rua</label><br>
 
-                <input type="radio" id="travessa" name="Travessa" value="Travessa">
+                <input type="radio" id="travessa" name="tipo_endereco" value="Travessa">
                 <label for="travessa">Travessa</label><br>
 
                 <label for="endereco">Endereço:</label><br>
                 <input type="text" id="endereco" name="Endereço" placeholder="Endereço"  size="20" required><br><br>
+
+                <label for="numero">N°:</label>
+                <input type="text" id="numero" name="numero" placeholder="Número"  size="10" required><br><br>
+
+                <label for="bairro">Bairro:</label><br>
+                <input type="text" id="Bairro" name="Bairro" placeholder="Bairro"  size="15" required><br><br>
+
+                <label for="complemento">Complemento(Opcional):</label><br>
+                <input type="text" id="complemento" name="Complemento" placeholder="Endereço"  size="20"><br><br>
             </fieldset>
+            <!-- Dados Financeiros -->
+            <fieldset>
+                <legend>Dados Financeiros</legend>
+                <label for="renda_individual">Renda Individual</label><br>
+                <input type="text" id="renda_individual" name="renda_individual" placeholder="Renda Individual"  size="20" required><br><br>
+
+                <label for="renda_familiar">Renda Familiar</label><br>
+                <input type="text" id="renda_familiar" name="renda_familiar" placeholder="Renda Familiar"  size="20" required><br><br>
+
+                <label for="metas">Metas Financeiras:</label><br>
+                <input type="radio" id="curto" name="metas_financeiras" value="Curto">
+                <label for="curto">Curto Prazo(Férias):</label><br>
+
+                <input type="radio" id="medio" name="metas_financeiras" value="medio">
+                <label for="medio">Médio Prazo(Veiculo)</label><br>
+
+                <input type="radio" id="longo" name="metas_financeiras" value="longo">
+                <label for="longo">Longo Prazo(Aposentadoria)</label><br><br>
+
+
+                <label for="salario">Sálario:</label><br>
+                <input type="text" id="salario" name="salario" placeholder="Sálario"  size="20" required><br><br>
+                
+                <label for="renda_anual">Renda Anual:</label><br>
+                <input type="text" id="renda_anual" name="anual" placeholder="Renda Anual"  size="20" required><br><br>
+        
+            </fieldset>
+            <fieldset>
+                <legend>Dados Comercias</legend>
+
+                <label for="nome_empresa">Nome da Empresa(Opcional):</label><br>
+                <input type="text" id="nome_empresa" name="nome_empresa" placeholder="Nome da Empresa"  size="20" ><br><br>
+
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ"  size="15" required><br><br>
+
+                <label for="endereco_comercial">Endereço Comercial(opcional):</label><br>
+                <input type="text" id="endereco_comercial" name="endereco_comercial" placeholder="Endereço Comercial"  size="20" ><br><br>
+
+                <label for="contato">Contato:</label><br>
+                <input type="text" id="contato" name="Contato" placeholder="Contato"  size="20" required><br><br>
+
+                <label for="contato_fixo">Contato Fixo(opcional):</label><br>
+                <input type="text" id="contato_fixo" name="Contato_fixo" placeholder="Contato Fixo"  size="20" ><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Veículo</legend>
+                <label for="modelo_marca">Modelo e Marca:</label><br>
+                <input type="text" id="modelo_marca" name="modelo_marca" placeholder="Modelo e Marca do Veículo"  size="20" ><br><br>
+
+                <label for="ano_fabricacao">Ano de Fabricação</label><br>
+                <input type="text" id="ano_fabricacao" name="ano_fabricacao" placeholder="Ano"  size="3" ><br><br>
+
+                <label for="placa">Placa:</label><br>
+                <input type="text" id="placa" name="placa" placeholder="Placa"  size="10" ><br><br>
+
+                <label for="tipo_veiculo">Tipo:</label><br>
+                <input type="text" id="tipo_veiculo" name="tipo_veiculo" placeholder="Sedan,SUV,Caminhonete,etc."  size="20" ><br><br>
+
+                <label for="proprietario">Proprietário:</label><br>
+                <input type="text" id="proprietario" name="proprietario" placeholder="Proprietário do Veículo"  size="20" ><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Imóvel</legend>
+                <input type="radio" id="residencial" name="tipo_imovel" value="Residencial">
+                <label for="residencial">Residencial</label><br>
+
+                <input type="radio" id="comercial" name="tipo_imovel" value="Comercial">
+                <label for="comercial">Comercial</label><br>
+
+                <input type="radio" id="terreno" name="tipo_imovel" value="Terreno">
+                <label for="terreno">Terreno</label><br>
+
+                <input type="radio" id="outro" name="tipo_imovel" value="Outro">
+                <label for="outro">Outro</label><br><br>
+
+                <label for="endereco_imovel">Endereço Imóvel</label><br>
+                <input type="text" id="endereco_imovel" name="endereco_imovel" placeholder="Endereço do Imóvel"  size="15" ><br><br>
+
+                <label for="placa">Placa:</label><br>
+                <input type="text" id="placa" name="placa" placeholder="Placa"  size="10" ><br><br>
+
+                <label for="tipo_veiculo">Tipo:</label><br>
+                <input type="text" id="tipo_veiculo" name="tipo_veiculo" placeholder="Sedan,SUV,Caminhonete,etc."  size="20" ><br><br>
+
+                <label for="proprietario">Proprietário:</label><br>
+                <input type="text" id="proprietario" name="proprietario" placeholder="Proprietário do Veículo"  size="20" ><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Cônjuge</legend>
+                <label for="nome_completo">Nome Completo:</label><br>
+                <input type="text" id="nome_completo" name="nome_completo" placeholder="Nome Completo"  size="20" ><br><br>
+
+                <label for="data_nascimento_conjuge">Data de Nascimento</label><br>
+                <input type="date" id="data_nascimento_conjuge" name="data_nascimento_conjuge" size="20" maxlength="10" placeholder="00-00-0000" ><br><br>
+
+                <label for="profissao">Profissão:</label><br>
+                <input type="text" id="profissao" name="profissao" placeholder="Profissão"  ><br><br>
+
+                <label for="renda_conjuge">Renda:</label><br>
+                <input type="text" id="renda_conjuge" name="renda_conjuge" placeholder="Renda"  size="20" ><br><br>
+
+                <label for="tipo_relacao">Tipo de Relação:</label><br>
+                <input type="text" id="tipo_relacao" name="tipo_relacao" placeholder="Casado, solteiro, viúvo, etc"  size="20" ><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Filho</legend>
+                <label for="nome_completo_filho">Nome Completo:</label><br>
+                <input type="text" id="nome_completo_filho" name="nome_completo_filho" placeholder="Nome Completo"  size="20" ><br><br>
+                
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf_filho" size="20" placeholder="CPF"><br><br>
+
+                <label for="data_nascimento_filho">Data de Nascimento</label><br>
+                <input type="date" id="data_nascimento_filho" name="data_nascimento_filho" size="20" maxlength="10" placeholder="00-00-0000" ><br><br>
+
+                <label for="escola">escola:</label><br>
+                <input type="text" id="escola" name="escola" placeholder="escola" size="20" ><br><br>
+
+                <label for="atividade">Aiividades:</label><br>
+                <input type="text" id="atividade" name="atividade" placeholder="atividade"  size="20" ><br><br>
+            </fieldset>
+            
+
 
         </form>
     </body>
