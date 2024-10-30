@@ -1,0 +1,106 @@
+.header{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    
+    
+}
+.divsearch{
+    align-self: center; 
+    margin: auto;
+
+}
+.search{
+    background-color: black;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 20px;
+    width: 100px;
+    
+   
+}
+
+.font{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    
+}
+nav{
+    background-color: black;
+}
+#divnav{
+    margin: auto;
+    width: 70%;
+ 
+}
+.nav{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;  
+}
+
+body{
+    margin: 0%;
+    background-size: auto;
+    
+    
+}
+
+
+#home1{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.texto{
+    text-align: justify;
+    margin: 13px;
+    padding: 5px;
+
+    
+}
+
+.titulos{
+    margin: 13px;
+}
+
+a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  #sobre1{
+    
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+
+  }
+  #sobre2{
+    
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+
+  }
