@@ -1,19 +1,45 @@
-from livro import livro
-from usuario import usuario
-from biblioteca import biblioteca
+from livros import Livros
+from usuario import Usuario
+from biblioteca import Biblioteca
+import mysql.connector
 
-rafaela = usuario('Rafaela',"01234552235")
+conexao = mysql.connector.connect(
+    host='10.28.0.242',
+    user='suporte',
+    password='suporte',
+    database='biblioteca'
+)
+cursor = conexao.cursor()
+
+# cursor.execute('insert into livro(titulo, autor , genero, status, codigo) values ("O pequeno principe","enzo", "ficçao","Disponivel",123);')
+
+# cursor.execute('update livro set genero = "fantasiaaaa" where genero = "ficçao";')
+
+# cursor.execute('select * from livro;')
+# qualquernome=cursor.fetchall()
+# print(qualquernome)
+# cursor.execute('delete from livro where id_livro = 5;')
+# conexao.commit() 
 
 
-dom_casmurro = livro('Dom casmurro', 'Machado de Assis', 'romance',1)
-antares = livro('incidente em arantes', 'erico verissimo', 'romance',2)
-dom_casmurro = livro('Dom casmurro', 'Machado de Assis', 'romance',3)
-dom_casmurro = livro('Dom casmurro', 'Machado de Assis', 'romance',4)
 
-biblioteca.acervo.append(dom_casmurro)
+rafaela = Usuario('Rafaela','01223839020','67940028922')
 
+dom_casmurro = Livros('Dom Casmurro','Machado de Assís','romance',1)
+antares = Livros('Incidente em Antares','Érico Veríssimo','Ficção distópica',2)
+poliana = Livros('Poliana','Eleanor H. Porter','Literatura infantil',3)
+monica = Livros('Almanacão Da Turma Da Mônica','Maurício de Souza','Literatura infantil',4)
 
+#
 
-rafaela.pegar_emprestado(dom_casmurro)
+#Metodo emprestar substitui as 8 linhas anteriores
+Biblioteca.emprestar(rafaela, [dom_casmurro, poliana, monica, antares] )
 
-print(vars(rafaela))
+# print(poliana.status)
+# print(rafaela.lista_livros)
+# #print(vars(rafaela))
+# print(vars(dom_casmurro))
+
+saraiva = Biblioteca()
+
+# print(dir(saraiva))
