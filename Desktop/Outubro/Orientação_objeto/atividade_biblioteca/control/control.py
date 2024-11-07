@@ -1,5 +1,5 @@
-from livros import Livros
-from database import bd
+from model import Livros
+from config import bd
 
 class controller:
     def create_livro(self):

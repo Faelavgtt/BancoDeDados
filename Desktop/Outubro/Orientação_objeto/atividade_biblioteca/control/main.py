@@ -1,6 +1,6 @@
-from livros import Livros
-from usuario import Usuario
-from biblioteca import Biblioteca
+# from livros import Livros
+# from usuario import Usuario
+# from biblioteca import Biblioteca
 
 
 # #printar metodo da classe/função  
