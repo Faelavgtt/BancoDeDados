@@ -1,27 +1,7 @@
 from livros import Livros
 from usuario import Usuario
 from biblioteca import Biblioteca
-import mysql.connector
 
-class bd:
-    def __init__(self, host, user, password, database):
-        self.host = host
-        self.user = user 
-        self.password = password
-        self.database = database
-
-    def conectar(self):         
-        self.conexao = mysql.connector.connect(
-            host= self.host,
-            user=self.user,
-            password=self.password,
-            database=self.database
-        )
-        self.cursor = self.conexao.cursor()
-    def desconectar(self):
-        self.conexao.close()
-        
-       
 
 # #printar metodo da classe/função  
 # sla = bd('10.28.0.242', 'suporte','suporte', 'biblioteca')

@@ -9,7 +9,19 @@ class Livros():
         self.usuario = None
 
     def create(self):
-        return 'insert into livro("titulo","autor","genero","")'
+        return f'insert into livro(titulo, autor, genero, status, codigo) values ("{self.titulo}","{self.autor}","{self.genero}","{self.status}", "{self.cod_livro}");'
+    
+    def read():
+        return f'select * from livro;'
+    
+    def update():
+        return f'update livro set titulo = "sla mano" where id_livro = 6;'
+    
+    def delete():
+        return 'delete from livro where id_livro = 6;'
+
+
+
 
     # def emprestar_livro(self, usuario):
     #     if self.status != 'Disponivel':
