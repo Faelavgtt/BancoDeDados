@@ -1,9 +1,10 @@
 class Usuario:
     MAX_EMPRESTIMO = 3
-    def __init__(self,nome,cpf,telefone):
+    def __init__(self,nome,cpf,telefone,email):
         self.nome = nome
         self.cpf = cpf
         self.telefone = telefone
+        self.email = email
         self.lista_livros = []
 
     def pegar_emprestado(self,livro):

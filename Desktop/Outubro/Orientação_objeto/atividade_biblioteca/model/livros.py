@@ -21,7 +21,7 @@ class Livros():
         return 'delete from livro where id_livro = 6;'
 
 
-
+Livros.__name__="Livros"
 
     # def emprestar_livro(self, usuario):
     #     if self.status != 'Disponivel':
