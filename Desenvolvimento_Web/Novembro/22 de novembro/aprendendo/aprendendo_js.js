@@ -27,6 +27,21 @@ comentando bloco
 
 // console.log(sla)
 
-var media = 8;
-media >= 7 ? 'aprovado':'Reprovado';
-console.log(media)
+// var media = 8;
+// media >= 7 ? 'aprovado':'Reprovado';
+// console.log(media)
+
+// document.write("sla");
+
+// document.write(date());
+
+// function myfuction(p1,p2){
+//     return p1 * p2
+// };
+
+
+
+
+
+
+
