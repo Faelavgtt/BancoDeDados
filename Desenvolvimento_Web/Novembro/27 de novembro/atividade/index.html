@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste</title>
+        <meta charset="UTF-8">
+        <style>
+            .span-required {
+                display: none;
+                font-size: 12px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="float: left;">
+            <label for="pesquisa">
+                <select name="pesquisa" id="pesquisa">
+                    <option value="NUMPRO" selected="selected">Número do Processo</option>
+                </select>
+            </label>
+            <input type="text" name="numeroUnificado" maxlength="25" size="20" value="6766656-65.7676" 
+                   id="numeroUnificado" oninput="numeroValidate()">
+            <span class="span-required" id="span-numeroUnificado">Não validado (inclua a pontuação)</span>
+
+            <input type="text" size="3" disabled="disabled" value="8.12" cursorshover="true">
+
+            <input type="text" name="NumeroUnificado4" maxlength="4" size="3" value="8888" id="NumeroUnificado4" oninput="numeroProcesso4validate()">
+            <span class="span-required" id="span-numeroUnificado4">Deve conter exatamente 4 dígitos</span>
+            
+            <label for="comarca">
+                <select name="comarca" id="comarca">
+                    <option value="comarca" selected="selected" >Todas Comarcas</option>
+                </select>
+            </label>
+            <input id="botaoConsultarProcessos" type="submit" value="Consultar">
+        
+
+            <fieldset class="bolinha" style="margin:0;padding:0;border:none;text-align:right" aria-required="" required="required">
+                <legend style="display:block;font-size:0;"></legend>
+                <input type="radio" id="radioNumeroUnificado" name="nuprocesso" value="UNIFICADO" style="vertical-align: text-bottom;" cursorshover="true">
+                <label for="radioNumeroUnificado" cursorshover="true">Unificado</label>
+                <input type="radio" id="radioNumeroAntigo" name="nuprocesso" value="SAJ" style="vertical-align:text-bottom;" cursorshover="true">
+                <label for="radioNumeroAntigo" cursorshover="true">Outros</label>
+            </fieldset>
+        </div>
+
+           
+
+        <script>
+            const numeroProcesso = /^(\d{7})-\d{2}\.\d{4}$/;
+            const numeroProcesso4 = /^\d{4}$/;
+
+            function numeroValidate() {
+                const numeroInput = document.getElementById("numeroUnificado");
+                const errorSpan = document.getElementById("span-numeroUnificado");
+
+                if (numeroProcesso.test(numeroInput.value)) {
+                    errorSpan.style.display = 'none'; 
+                } else {
+                    errorSpan.style.display = 'block'; 
+                }
+            }
+
+            function numeroProcesso4validate() {
+                const numeroInput = document.getElementById("NumeroUnificado4");
+                const errorSpan = document.getElementById("span-numeroUnificado4");
+
+                if (numeroProcesso4.test(numeroInput.value)) {
+                    errorSpan.style.display = 'none';
+                } else {
+                    errorSpan.style.display = 'block';
+                }
+            }
+        </script>
+    </body>
+</html>
