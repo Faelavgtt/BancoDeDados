@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo php</title>
+</head>
+
+<body>
+    <form method="POST" action="index.php">
+        <fieldset id="pessoal">
+            <legend>dados pessoais</legend>
+            <p>Nome <input type="text" name="nome" id="nome" size="20" maxlength="20" placeholder="Ex.: João"</p>
+        </fieldset>
+
+        <b>Qual seu sistema operacional?</b>
+        <input type="radio" name="sistema" value="windows98"> win98<br>
+        <input type="radio" name="sistema" value="windowsxp"> winxp<br>
+        <input type="radio" name="sistema" value="outros" checked> outros
+        <input type="submit">
+        <br>
+
+        <b>Qual o melhor professor?</b><br>
+        <input type="checkbox" id="ederson" name="prof[]" value="Ederson" checked/>
+        <label for="ederson">Ederson</label>
+        <br>
+
+        
+        <input type="checkbox" id="enilda" name="prof[]" value="Enilda" checked/>
+        <label for="enilda">Enilda</label>
+
+    </form>
+</body> 
