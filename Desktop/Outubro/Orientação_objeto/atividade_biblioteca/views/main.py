@@ -4,8 +4,9 @@ from PyQt6.QtGui import QPixmap
 from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QMainWindow, QDialog
 from PyQt6 import uic
 
-ui_file = "C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Novembro/21 de Novembro/design.ui"
-login_file = "C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Novembro/21 de Novembro/login.ui"
+ui_file = "C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/UI/design.ui"
+login_file = "C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/UI/login.ui"
+dashboard_file = "C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/UI/dashboard.ui"
 
 class loginWindow(QDialog):
     def __init__(self):
@@ -23,16 +24,31 @@ class loginWindow(QDialog):
             self.accept() 
         else:
             self.error_l.setText("Usuário ou senha incorretos!")
+
+class dashboard(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi(dashboard_file, self)
+
+        
+        self.cadastro_user = cadastro_user()
+
+       
+        self.menu_cadastrar_user.clicked.connect(self.clicked)
+
+    def clicked(self):
+        self.cadastro_user.show()
+        
         
 
-class MainWindow(QMainWindow):
+class cadastro_user(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi(ui_file, self)
         
         
         self.btn_cadastrar.clicked.connect(self.clicked)
-        pixmap = QPixmap('C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Novembro/21 de Novembro/img/vou_resolver_isso kawaii.png')  
+        pixmap = QPixmap('C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/img/vou_resolver_isso kawaii.png')  
         self.imagem_ederson.setPixmap(pixmap)
         self.imagem_ederson.setScaledContents(True)
 
@@ -62,6 +78,6 @@ app = QApplication(sys.argv)
 Login= loginWindow()
 Login.show()
 if Login.exec() == QDialog.DialogCode.Accepted:
-    window = MainWindow()
+    window = dashboard()
     window.show()
 sys.exit(app.exec())

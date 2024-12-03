@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>571</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="menu_usuario">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>251</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FAD0C9;  /* Cor de fundo rosa bebê */
+    border: 2px solid #F1A7B2;  /* Borda rosa mais escura */
+    color: white;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: bold;
+    padding: 12px 24px;  /* Espaciamento interno */
+    border-radius: 30px;  /* Bordas arredondadas */
+    transition: all 0.3s ease;  /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: center;  /* Alinhar texto no centro */
+}
+
+QPushButton:hover {
+    background-color: #F8A7B8;  /* Cor de fundo rosa mais forte ao passar o mouse */
+    border-color: #F08B9C;  /* Cor da borda mais escura */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Aumento da sombra */
+}
+
+QPushButton:pressed {
+    background-color: #F1A7B2;  /* Cor de fundo rosa mais escura ao pressionar */
+    border-color: #D68088;  /* Cor da borda mais escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra mais suave ao pressionar */
+    transform: translateY(4px);  /* Efeito de &quot;afundar&quot; ao pressionar */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Gatinho fofo</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="menu_cadastrar_livro">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>251</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FAD0C9;  /* Cor de fundo rosa bebê */
+    border: 2px solid #F1A7B2;  /* Borda rosa mais escura */
+    color: white;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: bold;
+    padding: 12px 24px;  /* Espaciamento interno */
+    border-radius: 30px;  /* Bordas arredondadas */
+    transition: all 0.3s ease;  /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: center;  /* Alinhar texto no centro */
+}
+
+QPushButton:hover {
+    background-color: #F8A7B8;  /* Cor de fundo rosa mais forte ao passar o mouse */
+    border-color: #F08B9C;  /* Cor da borda mais escura */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Aumento da sombra */
+}
+
+QPushButton:pressed {
+    background-color: #F1A7B2;  /* Cor de fundo rosa mais escura ao pressionar */
+    border-color: #D68088;  /* Cor da borda mais escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra mais suave ao pressionar */
+    transform: translateY(4px);  /* Efeito de &quot;afundar&quot; ao pressionar */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cadastrar Livro</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="menu_sla">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>251</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FAD0C9;  /* Cor de fundo rosa bebê */
+    border: 2px solid #F1A7B2;  /* Borda rosa mais escura */
+    color: white;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: bold;
+    padding: 12px 24px;  /* Espaciamento interno */
+    border-radius: 30px;  /* Bordas arredondadas */
+    transition: all 0.3s ease;  /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: center;  /* Alinhar texto no centro */
+}
+
+QPushButton:hover {
+    background-color: #F8A7B8;  /* Cor de fundo rosa mais forte ao passar o mouse */
+    border-color: #F08B9C;  /* Cor da borda mais escura */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Aumento da sombra */
+}
+
+QPushButton:pressed {
+    background-color: #F1A7B2;  /* Cor de fundo rosa mais escura ao pressionar */
+    border-color: #D68088;  /* Cor da borda mais escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra mais suave ao pressionar */
+    transform: translateY(4px);  /* Efeito de &quot;afundar&quot; ao pressionar */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Empréstimo</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QFrame" name="frame_4">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="menu_cadastrar_user">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>251</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FAD0C9;  /* Cor de fundo rosa bebê */
+    border: 2px solid #F1A7B2;  /* Borda rosa mais escura */
+    color: white;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: bold;
+    padding: 12px 24px;  /* Espaciamento interno */
+    border-radius: 30px;  /* Bordas arredondadas */
+    transition: all 0.3s ease;  /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: center;  /* Alinhar texto no centro */
+}
+
+QPushButton:hover {
+    background-color: #F8A7B8;  /* Cor de fundo rosa mais forte ao passar o mouse */
+    border-color: #F08B9C;  /* Cor da borda mais escura */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Aumento da sombra */
+}
+
+QPushButton:pressed {
+    background-color: #F1A7B2;  /* Cor de fundo rosa mais escura ao pressionar */
+    border-color: #D68088;  /* Cor da borda mais escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra mais suave ao pressionar */
+    transform: translateY(4px);  /* Efeito de &quot;afundar&quot; ao pressionar */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cadastrar Usuário</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

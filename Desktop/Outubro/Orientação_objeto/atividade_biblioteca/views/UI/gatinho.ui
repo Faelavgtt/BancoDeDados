@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(&quot;C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/img/miau.jpg&quot;);  
+background-repeat: no-repeat; 
+background-position: center;  /* Centraliza a imagem */
+ background-size: cover;  /* Ajusta a imagem para cobrir toda a janela */</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
