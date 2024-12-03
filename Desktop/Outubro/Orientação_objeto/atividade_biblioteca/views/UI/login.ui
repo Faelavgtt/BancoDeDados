@@ -13,8 +13,14 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-image: url(&quot;C:/Users/RafaelaCamposano/OneDrive - Serviço Nacional de Aprendizagem Comercial/github/SenacMS-1/Desktop/Outubro/Orientação_objeto/atividade_biblioteca/views/img/kawaii.jpg&quot;);  /* Caminho para a imagem */
+background-repeat: no-repeat;  /* Impede que a imagem se repita */
+background-position: center;  /* Centraliza a imagem */
+ background-size: cover;  /* Ajusta a imagem para cobrir toda a janela */</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -42,9 +48,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">.QLineEdit{ border:none;
-	background-color: #CACACA;
-}</string>
+    <string notr="true">border:none;
+background-color: rgb(226, 226, 226);</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="inputUser">
@@ -57,9 +62,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">.QLineEdit{ border:none;
-	background-color: #CACACA;
-}</string>
+    <string notr="true">border:none;
+background-color: rgb(226, 226, 226);</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_entrar">
