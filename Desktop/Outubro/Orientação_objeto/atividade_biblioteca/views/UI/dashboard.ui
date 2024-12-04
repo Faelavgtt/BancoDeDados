@@ -32,7 +32,7 @@
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <widget class="QPushButton" name="menu_usuario">
+       <widget class="QPushButton" name="gatinho_menu">
         <property name="geometry">
          <rect>
           <x>20</x>
