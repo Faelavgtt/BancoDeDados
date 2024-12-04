@@ -1,0 +1,70 @@
+<!-- 1 – Faça um formulário que contenha os seguintes dados:
+Text = (nome, Rg, CPF, Endereço)
+Number = (idade)
+Date = (data)
+Checkbox = (preferência época do ano)
+Radio = (sexo)
+Color = (cor)
+...Mais 5 perguntas...
+Utilizando o method POST ou GET envie os valores para outro formulário, que deverá imprimir os dados formatados em tabelas.
+ -->
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>att php</title>
+</head>
+
+<body style="background-color: #FFD7F3;">
+    <form method="POST" action="index.php">
+        <fieldset id="dados_pessoais">
+            <legend>Dados pessoais</legend>
+            <p>Nome: <input type="text" name="nome" id="nome" size="20" maxlength="20" placeholder="Ex.: Ederson"></p>
+            <p>idade: <input type="number" name="idade" id="idade" size="3" maxlength="3" placeholder="Ex.: 20"></p>
+            <p>RG(CPF): <input type="text" name="rg" id="rg" size="20" maxlength="20" placeholder="Ex.: 000.999.999-45"></p>
+            <p>Endereço: <input type="text" name="endereco" id="endereco" size="20" maxlength="20" placeholder="Ex.: Av.exemplo 123"></p>
+            
+            <label for="data">Data de Nascimento:</label><br>
+            <input type="date" name="date" id="data" size="20" maxlength="10" placeholder="00-00-0000"></p>
+
+            <p>Gênero</p>
+            <input type="radio" name="genero" value="feminino">Feminino<br>
+            <input type="radio" name="genero" value="masculino">Masculino<br>
+            <input type="radio" name="genero" value="outros" checked>Outros
+        </fieldset>
+        <br><br>
+
+
+        <b>Qual sua preferência de época do ano?</b><br>
+        <input type="checkbox" id="inverno ❄" name="epoca[]" value="inverno"/>
+        <label for="inverno">Inverno</label>
+
+        <input type="checkbox" id="primavera" name="epoca[]" value="primavera"/>
+        <label for="primavera">Primavera 🌹</label>
+
+        <input type="checkbox" id="verao" name="epoca[]" value="verao"/>
+        <label for="verao">Verão ☀</label>
+
+        <input type="checkbox" id="outono" name="epoca[]" value="outono"/>
+        <label for="outono">Outono 🍂</label>
+
+        <br><br>
+        <p>Cor favorita: <input type="color" name="cor"></p>
+        <p>Qual sua profissão? <input type="text" name="profissao" placeholder="Ex.: Programador"></p>
+        <p>Escolha uma cor de fundo preferida: <input type="color" name="cor_fundo"></p>
+        
+        <p>Status de relacionamento:</p>
+        <input type="radio" name="relacionamento" value="solteiro"> Solteiro<br>
+        <input type="radio" name="relacionamento" value="casado"> Casado<br>
+        <input type="radio" name="relacionamento" value="divorciado"> Divorciado<br>
+
+        <p>Número de filhos: <input type="number" name="num_filhos" placeholder="Ex.: 2"></p>
+        <p>Qual seu hobby favorito? <input type="text" name="hobby" placeholder="Ex.: Leitura"></p>
+
+        <input type="submit">    
+
+    </form>
+</body> 
