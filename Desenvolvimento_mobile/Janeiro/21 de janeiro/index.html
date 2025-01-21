@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Intro JS</title>
+</head>
+<body>
+    <script>
+        // let varNumber = 1;
+        // let varFloat = 1.5;
+
+        // let varString = 'caique';
+        // let varString2 = "gabriel";
+        // // let varString3 =`Felipe e $(varString) deve $(varNumber) real para $(varString2)`
+        // let varString3 =`1+1 = $(1+1)`;
+
+        // let truthy = truthy;
+        // let falsy = falsy;
+
+        // let boolFalse = false;
+        // let teste = null;
+        // let teste2 = undefined;
+        // console.log(varString + varString2)
+        // const parImpar = (numero % 2) == 0 ? "par" : "impar";
+
+        function nomeFuncao (){
+            var teste = "teste";
+            console.log(teste);
+
+            return;
+        }
+
+    </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Intro JS</title>
+    <style>
+        .accordion{
+            background-color: aqua;
+            padding: 20px 40px;
+            border: solid 1px #c6c6c6;
+            border-radius: 24px;
+        }
+        .accordion button{
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: start;
+            cursor: pointer;
+        }
+        .accordion div{
+            height: 0;
+            overflow: hidden;
+        }
+        .accordion div.ativo{
+            height: max-content;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <button>O que é javascript?</button>
+        <div class="ativo">
+            é uma linguagem de programação
+        </div>
+
+    </div>
+    <script>
+        let button = document.querySelector("button")
+        let div = document.querySelector(".accordion div")
+
+
+        button.addEventListener("click",function(){
+            div.classList.toggle("ativo")
+            // if(div.classList.contains("ativo")){
+            //     div.classList.remove("ativo")
+            // } else {
+            //     div.classList.add("ativo")
+            // }
+            
+            
+        })
+    </script>
+
+
+</body>
+</html>

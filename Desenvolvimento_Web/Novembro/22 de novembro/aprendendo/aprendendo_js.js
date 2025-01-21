@@ -22,10 +22,10 @@ comentando bloco
 // window.alert("ola " + nome + " seja bem vind")
 
 
-// var x = 10
-// var sla = 10 === 10
+var x = 10
+var sla = 10 === 10
 
-// console.log(sla)
+console.log(sla)
 
 // var media = 8;
 // media >= 7 ? 'aprovado':'Reprovado';
