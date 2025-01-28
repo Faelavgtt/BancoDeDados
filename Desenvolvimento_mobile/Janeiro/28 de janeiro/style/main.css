@@ -1,0 +1,80 @@
+@import url(./root.css);
+
+#menu-header{
+    display: flex;
+    max-height: 90px;
+    background-color: #30155c;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menu-header>div>img{
+    height: 80px;
+    
+}
+
+#menu-header>nav>ul{
+    display: flex;
+    gap: 15px;
+    
+}
+#menu-header>nav>button{
+    display: none;
+}
+
+.item-menu>a{
+    color: rgb(215, 254, 255);
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 15px;
+    
+
+}
+.item-menu>a:hover{
+    background-color: #522479;
+
+}
+
+@media(max-width:650px){
+    #menu-header{
+        position: relative;
+        justify-content: space-between;
+        padding-right: 10px;
+        
+    }
+
+    #menu-header>nav>button{
+        display: block;
+        background: none;
+        border: none;
+        
+    }
+
+    #menu-header>nav>ul{
+        display: none;
+    }
+
+    #menu-header>nav>ul.ativo{
+        display: block;
+        position: absolute;
+        top: 84px;
+        right: 0;
+        flex-direction: column;
+        background-color: #30155c;
+        border-radius: 0% 0% 15% 15%;
+        font-size: 40px;
+        padding-bottom: 10px;
+        
+    }
+
+    
+
+    #menu-png{
+        width: 40px;
+        
+    }
+    
+}
+    
