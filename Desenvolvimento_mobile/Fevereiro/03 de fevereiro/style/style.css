@@ -1,0 +1,48 @@
+@import url(./root.css);
+
+#grid-header{
+    display: flex;
+    max-height: 100px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#grid-header>img{
+    width: 300px;
+}
+
+body{
+    background-image: url('../img/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#main-container{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    border-radius: 2%;
+    
+}
+
+.grid-pokemons{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 2%;
+    justify-items: center;
+    
+    
+}
+#botao-mais{
+    justify-self: center;
+}
+
+button{
+    border: none;
+    
+}
