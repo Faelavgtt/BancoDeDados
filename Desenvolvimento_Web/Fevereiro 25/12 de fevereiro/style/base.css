@@ -1,8 +1,10 @@
 @import url(./root.css);
-@font-face {
-    font-family: 'MOMENTZ';
-    src: url('MOMENTZ.ttf') format('truetype');
-  }
+/* @font-face {
+    font-family:'MOMENTZ';
+    src: url('MOMENTZ.TTF') format('truetype');
+  } */
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Matemasie&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header{
     max-height: 100px;
@@ -19,8 +21,13 @@
     align-items: center;
     justify-content: space-evenly;
       
-
 }
+
+#banner>img{
+    width: 100%;
+   
+}
+
 #logo-img{
     position: relative;
     width: 130px;
@@ -36,11 +43,10 @@
 
 #navbar{
     position: relative;
-    font-family: 'MOMENTZ', sans-serif;
+    font-family: "Chewy", serif;
     color: #ffffff;
     font-size: 45px;
     display: flex;
     gap: 25%;
 
-    
 }
