@@ -1,0 +1,16 @@
+@import url(../style/base.css);
+
+.main-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+}
