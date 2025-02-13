@@ -3,8 +3,111 @@
 #banner{
     display: flex;
     justify-content: center;
+
+}
+
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     
-    
-    
-    
+}
+
+.container_carrossel {
+    display: flex;
+    width: 400%;
+    transition: transform 2s ease-in-out;
+}
+
+.item_carrossel {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.bg_carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f08080, transparent); 
+    background-blend-mode: overlay;
+}
+
+.item_carrossel:nth-child(1) {
+    background-image: url('../img/banner-carrossel.jpg');
+}
+
+.item_carrossel:nth-child(2) {
+    background-image: url('../img/banner-carrossel-2.jpg');
+}
+
+.item_carrossel:nth-child(3) {
+    background-image: url('../img/banner-carrossel-3.jpg');
+}
+
+.item_carrossel:nth-child(4) {
+    background-image: url('../img/banner-carrossel-4.jpg');
+}
+
+.text_carrossel {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    width: 25%;
+    height: auto;
+    transform: translateY(-50%);
+    padding: 30px 60px;
+    text-align: left;
+}
+
+.text_carrossel h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+    user-select: none;
+    margin-top: 20%;
+    font-family: "Chewy", serif;
+    color: rgb(255, 255, 255);
+}
+
+.text_carrossel h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    user-select: none;
+    font-family:  Tahoma, Verdana, sans-serif;
+    color: white;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    color: white;
+    border: none;
+    padding: 30px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color:#fbc4ab;
+    transform: translateY(-50%) scale(1.2);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
 }
