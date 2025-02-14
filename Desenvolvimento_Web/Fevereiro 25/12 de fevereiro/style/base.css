@@ -23,10 +23,6 @@
       
 }
 
-#banner>img{
-    width: 100%;
-   
-}
 
 #logo-img{
     position: relative;
@@ -42,6 +38,7 @@
 }
 
 #navbar{
+    display: block;
     position: relative;
     font-family: "Chewy", serif;
     color: #ffffff;
@@ -49,4 +46,198 @@
     display: flex;
     gap: 25%;
 
+}
+
+
+@media (max-width: 1300px){
+ 
+    
+    #logo-img{
+        position: relative;
+        width: 125px;
+        padding-bottom: 1%;
+    
+        
+    }
+    
+    #logo-name{
+        width: 400px;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 35px;
+        display: flex;
+        gap: 25%;
+    
+    }
+
+}
+
+@media (max-width: 1070px) {
+    #logo-img{
+        position: relative;
+        width: 100px;
+        padding-bottom: 1%;
+    
+        
+    }
+    
+    #logo-name{
+        width: 300px;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 30px;
+        display: flex;
+        gap: 25%;
+    
+    }
+}
+
+@media (max-width: 880px) {
+    #logo-img{
+        position: relative;
+        width: 70px;
+        padding-bottom: 1%;
+    
+        
+    }
+    
+    #logo-name{
+        width: 250px;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 30px;
+        display: flex;
+        gap: 15%;
+    
+    }
+}
+@media (max-width: 680px) {
+    #logo-img{
+        position: relative;
+        width: 60px;
+        padding-bottom: 3%;
+    
+        
+    }
+    
+    #logo-name{
+        width: 200px;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 25px;
+        display: flex;
+        gap: 15%;
+    
+    }
+    .header{
+        max-height: 100px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 10%;
+        
+    }
+}
+@media (max-width: 554px) {
+    #logo-img{
+        position: relative;
+        width: 55px;
+        padding-bottom: 2%;
+    
+        
+    }
+    
+    #logo-name{
+        width: 150px;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 25px;
+        display: flex;
+        gap: 15%;
+    
+    }
+    .header{
+        max-height: 100px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 15%;
+        
+    }
+}
+@media (max-width: 489px) {
+    #logo-img{
+        position: relative;
+        width: 60px;
+        padding-bottom: 2%;
+    
+        
+    }
+    
+    #logo-name{
+        display: none;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 30px;
+        display: flex;
+        gap: 15%;
+    
+    }
+    .header{
+        background: linear-gradient(to right, #f08080,#f8ad9d);
+        width: 100%;
+        max-height: 100px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 10%;
+        
+    }
+}
+
+@media (max-width: 399px) {
+    #logo-img{
+        position: relative;
+        width: 60px;
+        padding-bottom: 2%;
+    
+        
+    }
+    
+    #logo-name{
+        display: none;
+    
+    }
+    
+    #navbar{
+        position: relative;
+        font-size: 25px;
+        display: flex;
+        gap: 15%;
+    
+    }
+    .header{
+        background: linear-gradient(to right, #f08080,#f8ad9d);
+        width: 100%;
+        max-height: 100px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 15%;
+        
+    }
 }

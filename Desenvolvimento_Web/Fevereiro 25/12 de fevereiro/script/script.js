@@ -3,6 +3,7 @@ const slides = document.querySelectorAll('.item_carrossel');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
+
 let index = 0;
 
 function updateCarousel() {
@@ -31,4 +32,11 @@ let autoSlide = setInterval(autoPlay, 10000);
 function resetAutoPlay() {
     clearInterval(autoSlide);
     autoSlide = setInterval(autoPlay, 10000);
-}
+};
+
+
+document.getElementById("assinar").addEventListener("click",() =>{
+    window.location.href = "../planos/plano-patinhas.html"
+})
+
+
