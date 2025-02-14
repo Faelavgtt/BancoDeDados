@@ -1,18 +1,11 @@
 @import url(../style/base.css);
 
-#banner{
-    display: flex;
-    justify-content: center;
-
-}
-
-
 .carrossel {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
     
 }
 
@@ -25,18 +18,19 @@
 .item_carrossel {
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 90vh;
     position: relative;
     align-items: center;
     justify-content: center;
     background-size: cover; 
     background-position: center; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .bg_carrossel {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background: linear-gradient(to right, #f08080, transparent); 
     background-blend-mode: overlay;
 }
@@ -85,7 +79,7 @@
     color: white;
 }
 
-button {
+.carrossel>button {
     position: absolute;
     top: 50%;
     color: white;
@@ -124,12 +118,13 @@ button:hover {
 
 #plano{
     display: grid;
-    grid-template-rows: 10% 40% 20% 20%;
+    grid-template-rows: 10% 32% 20% 10%;
     width: 20%;
     background-color: #f08080;
     font-family: "Chewy", serif;
     color: white;
     border-radius: 5%;
+    box-shadow: 0 5px 3px rgba(168, 13, 13, 0.4);
     
     
     
@@ -151,6 +146,95 @@ button:hover {
     position: relative;
     text-align: center;
 }
+
+.assinar{
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    font-size: 35px;
+    border: none;
+    background-color: #fbc4ab;
+    transition: all 0.5s ease;
+    transform: translateY(-10%);
+    width: 40%;
+    height: 100%;
+    font-family: "Chewy", serif;
+    color: white;
+}
+ #plano>button:hover{
+        background-color:#ec344c;
+        transform: translateY(2%) scale(0.9);
+    
+ }
+
+ #plano2{
+    display: grid;
+    grid-template-rows: 10% 32% 20% 10%;
+    width: 20%;
+    background-color: #f0b280;
+    font-family: "Chewy", serif;
+    color: rgb(255, 255, 255);
+    border-radius: 5%;
+    box-shadow: 0 5px 3px rgba(168, 132, 13, 0.4);
+    
+    
+    
+    
+}
+
+#plano3{
+    display: grid;
+    grid-template-rows: 10% 32% 20% 10%;
+    width: 20%;
+    background-color: #ff96a4;
+    font-family: "Chewy", serif;
+    color: white;
+    border-radius: 5%;
+    box-shadow: 0 5px 3px rgba(168, 13, 85, 0.4);
+    
+    
+    
+}
+
+#plano2>button:hover{
+    background-color:#f89b6f;
+    transform: translateY(2%) scale(0.9);
+
+}
+
+#plano3>button:hover{
+    background-color:#f36c94;
+    transform: translateY(2%) scale(0.9);
+
+}
+
+#descricao-patinhas{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #2e0f11;
+    padding-top: 2%;
+    padding-bottom: 20%;
+  
+}
+
+
+#descricao-doce{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #2e0f11;
+    padding-top: 2%;
+    padding-bottom: 20%;
+    
+    
+    
+}
+
 #descricao-patinhas{
     font-size: 15px;
     text-align: justify;
@@ -162,4 +246,35 @@ button:hover {
     
     
     
+}
+
+
+
+@media (max-width: 1600px) {
+    #plano{
+        display: grid;
+        grid-template-rows: 10% 35% 15% 10%;
+        width: 25%;
+
+    }
+    #plano2{
+        display: grid;
+        grid-template-rows: 10% 35% 15% 10%;
+        width: 25%;
+
+    }
+    #plano3{
+        display: grid;
+        grid-template-rows: 10% 35% 15% 10%;
+        width: 25%;
+
+    }
+
+    .text_carrossel h2 {
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+    
+
 }
