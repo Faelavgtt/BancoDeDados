@@ -5,8 +5,8 @@
 .plano-patinhas{
     background-color: #f08080;
     margin-top: 3%;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 2%;
     display: flex;
     font-family: "Chewy", serif;
@@ -45,8 +45,8 @@
  .plano-doce{
     background-color: #ffdab9;
     margin-top: 3%;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left:10%;
+    margin-right: 10%;
     padding-top: 2%;
     display: flex;
     font-family: "Chewy", serif;
@@ -62,16 +62,17 @@
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
+    gap: 5%;
     
     
 }
 
 .plano-doce>img{
     margin-right: 5%;
-    width: 500px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     border-radius: 10px;
+    width: 500px;
  }
 
  
@@ -88,5 +89,55 @@
 
 .plano-doce>div>p{
     color: rgb(155, 90, 52);  
+    
+}
+
+.plano-pessego{
+    background-color: #fa96c5;
+    margin-top: 3%;
+    margin-left:10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    display: flex;
+    font-family: "Chewy", serif;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    
+    
+
+ }
+
+ .plano-pessego>div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 5%;
+    
+    
+}
+
+.plano-pessego>img{
+    margin-left: 5%;
+    width: 500px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+ }
+
+ 
+.plano-pessego>div>h2{
+    color: #a50362;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.plano-pessego>div>h1{
+    color: #a50362;
+    padding-bottom: 2%;
+}
+
+.plano-pessego>div>p{
+    color: rgb(112, 18, 89);  
     
 }

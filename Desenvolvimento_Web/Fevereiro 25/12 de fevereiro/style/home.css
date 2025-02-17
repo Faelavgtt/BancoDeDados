@@ -313,7 +313,7 @@ button:hover {
 }
 
 .container-footer{
-    margin-top: 15%;
+    margin-top: 5%;
     padding-bottom: 2%;
     display: flex;
     justify-content: space-evenly;
@@ -337,6 +337,10 @@ button:hover {
 }
 
 .plano-ref{
+    cursor: pointer;
+}
+
+.navegacao-ref{
     cursor: pointer;
 }
 

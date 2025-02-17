@@ -38,22 +38,22 @@ function resetAutoPlay() {
 
 document.querySelectorAll(".assinar").forEach(button => {
     button.addEventListener("click", () => {
-        window.location.href = "../planos/planos.html";
+        window.location.href = "../planos.html";
     });
 });
 
-document.querySelectorAll(".plano-ref").forEach(button => {
+document.querySelectorAll(".navegacao-ref").forEach(button => {
     button.addEventListener("click", () => {
-        window.location.href = "../planos/planos.html";
-    });
+        const targetPage = button.getAttribute("data-target"); 
+        window.location.href = targetPage; 
+    })
 });
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".logo-img").addEventListener("click", () => {
-        window.location.href = "./home/index.html";
-    });
+document.querySelectorAll(".logo-img").forEach(button => {
+    button.addEventListener("click", () => {
+        const targetPage = button.getAttribute("data-target"); 
+        window.location.href = targetPage; 
+    })
 });
 
 
