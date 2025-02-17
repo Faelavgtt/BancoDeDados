@@ -4,16 +4,17 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
 
+
 let index = 0;
 
 function updateCarousel() {
     container.style.transform = `translateX(${-index * 25}%)`;
-}
+};
 
 function autoPlay() {
     index = (index + 1) % slides.length; 
     updateCarousel();
-}
+};
 
 next.addEventListener('click', () => {
     index = (index + 1) % slides.length;
@@ -35,8 +36,24 @@ function resetAutoPlay() {
 };
 
 
-document.getElementById("assinar").addEventListener("click",() =>{
-    window.location.href = "../planos/plano-patinhas.html"
-})
+document.querySelectorAll(".assinar").forEach(button => {
+    button.addEventListener("click", () => {
+        window.location.href = "../planos/planos.html";
+    });
+});
+
+document.querySelectorAll(".plano-ref").forEach(button => {
+    button.addEventListener("click", () => {
+        window.location.href = "../planos/planos.html";
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".logo-img").addEventListener("click", () => {
+        window.location.href = "./home/index.html";
+    });
+});
 
 
