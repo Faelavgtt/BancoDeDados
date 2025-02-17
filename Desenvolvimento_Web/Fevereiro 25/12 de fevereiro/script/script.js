@@ -38,7 +38,7 @@ function resetAutoPlay() {
 
 document.querySelectorAll(".assinar").forEach(button => {
     button.addEventListener("click", () => {
-        window.location.href = "../planos/planos.html";
+        window.location.href = "../planos.html";
     });
 });
 

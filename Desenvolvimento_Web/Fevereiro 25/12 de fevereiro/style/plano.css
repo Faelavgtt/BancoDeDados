@@ -5,8 +5,8 @@
 .plano-patinhas{
     background-color: #f08080;
     margin-top: 3%;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 2%;
     display: flex;
     font-family: "Chewy", serif;
@@ -45,8 +45,8 @@
  .plano-doce{
     background-color: #ffdab9;
     margin-top: 3%;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left:10%;
+    margin-right: 10%;
     padding-top: 2%;
     display: flex;
     font-family: "Chewy", serif;
@@ -93,10 +93,10 @@
 }
 
 .plano-pessego{
-    background-color: #ffdab9;
+    background-color: #fa96c5;
     margin-top: 3%;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left:10%;
+    margin-right: 10%;
     padding-top: 2%;
     display: flex;
     font-family: "Chewy", serif;
@@ -127,17 +127,17 @@
 
  
 .plano-pessego>div>h2{
-    color: #f66a07;
+    color: #a50362;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 .plano-pessego>div>h1{
-    color: #ff4800;
+    color: #a50362;
     padding-bottom: 2%;
 }
 
 .plano-pessego>div>p{
-    color: rgb(155, 90, 52);  
+    color: rgb(112, 18, 89);  
     
 }
