@@ -1,0 +1,92 @@
+@import url(../style/base.css);
+@import url(../style/home.css);
+
+
+.plano-patinhas{
+    background-color: #f08080;
+    margin-top: 3%;
+    margin-left:5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    display: flex;
+    font-family: "Chewy", serif;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    
+
+}
+.plano-patinhas>div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    gap: 5%;
+    padding-right: 5%;
+    
+}
+
+.plano-patinhas>div>h2{
+    color: #730000;
+}
+
+.plano-patinhas>div>h1{
+    color: #670505;
+}
+
+.plano-patinhas>div>p{
+    color: rgb(155, 52, 52);  
+}
+.plano-patinhas>img{
+    
+    margin-left: 5%;
+    width: 500px;
+    border-radius: 10px;
+ }
+
+ .plano-doce{
+    background-color: #ffdab9;
+    margin-top: 3%;
+    margin-left:5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    display: flex;
+    font-family: "Chewy", serif;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    
+    
+
+ }
+
+ .plano-doce>div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    
+}
+
+.plano-doce>img{
+    margin-right: 5%;
+    width: 500px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+ }
+
+ 
+.plano-doce>div>h2{
+    color: #f66a07;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.plano-doce>div>h1{
+    color: #ff4800;
+    padding-bottom: 2%;
+}
+
+.plano-doce>div>p{
+    color: rgb(155, 90, 52);  
+    
+}
