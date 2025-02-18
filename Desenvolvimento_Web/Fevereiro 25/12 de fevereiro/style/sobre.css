@@ -1,3 +1,23 @@
 @import url(../style/base.css);
 @import url(../style/home.css);
 @import url(../style/plano.css);
+
+.sobre-nos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Chewy", serif;
+    background-color: #f08080;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    font-size:25px;
+    border-radius: 20px;
+    padding-top: 2%;
+    color: white;
+}
+.sobre-nos>p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
