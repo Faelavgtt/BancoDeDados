@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="/page.php">
+        <h1>Cadastro de Usuário</h1>
+        <fieldset>
+            <legend>Nome Completo</legend>
+            <label for="name"></label><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Data de Nascimento:</legend>
+            <label for="data"></label>
+            <input type="date" name="date" id="data" size="20" maxlength="10" placeholder="00-00-0000">
+        </fieldset>
+        <fieldset>
+            <legend>Gênero:</legend>
+            <label for="genero"></label>
+            <input type="radio" id="generom" name="generom" value="Masculino">
+            <label for="generom">Masculino</label><br>
+            <input type="radio" id="generof" name="generof" value="Feminino">
+            <label for="generof">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>CPF:</legend>
+            <label for="cpf"></label>
+            <input type="number" id="cpf" name="cpf" value="CPF" placeholder="000.000.000-00">
+        </fieldset>
+        <fieldset>
+            <legend>RG:</legend>
+            <label for="rg"></label>
+            <input type="number" id="rg" name="rg" value="rg" placeholder="0.000.000">
+        </fieldset>
+        <fieldset>
+            <legend>Idade:</legend>
+            <label for="idade"></label>
+            <input type="number" id="idade" name="idade" min="0" max="120"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <label for="endereco"></label>
+            <input type="text" id="endereco" name="endereco" placeholder="Exemplo: Av. quinhentos, 34">
+            <input type="text" id="cidade" name="cidade" placeholder="Exemplo: Campo Grande">
+            <input type="text" id="estado" name="estado" placeholder="Exemplo: Rio de Janeiro">
+        </fieldset>
+        <fieldset>
+            <legend>Celular:</legend>
+            <label for="celular"></label>
+            <input type="number" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx"><br>
+        </fieldset>
+        <fieldset id="email">
+            <legend>E-mail</legend>
+            <input type="email" name="email" id="email" size="20" maxlength="30">
+        </fieldset>
+        <fieldset>
+            <legend>Senha:</legend>
+            <input type="password" name="Senha" id="campos" size="20" maxlength="10" >
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>termos:</legend>
+            <input type="checkbox" id="termos" name="termos" value="true" required>
+            <label for="termos">li e aceito os termos</label><br>
+        </fieldset><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar Formulário</button>
+
+    </form>
+    
+</body>
+</html>
